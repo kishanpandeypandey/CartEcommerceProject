@@ -10,6 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@ include file="components/navbar.jsp" %>
 
 <h1> hello jarvesh</h1>
 <%
