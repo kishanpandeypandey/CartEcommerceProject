@@ -4,14 +4,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%@ include file ="components/common-css-js.jsp" %>
+
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
-<h1> hello jarvarse</h1>
+
+<h1> hello jarvesh</h1>
 <%
 out.println(FactoryProvider.getFactory());
-
 %>
+
 </body>
 </html>
