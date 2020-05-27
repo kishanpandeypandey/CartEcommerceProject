@@ -11,5 +11,11 @@
 	    <property name="hibernate.connection.password"></property>
 	    <property name="hbm2ddl.auto">update</property>
 	    <property name="Show-sql">true</property>
+	    
+	    <mapping class="com.java.ecommerce.entitys.User"/>
+	    <mapping class="com.java.ecommerce.entitys.Category"/>
+	    <mapping class="com.java.ecommerce.entitys.Product"/>
+	    
+	    
    </session-factory>
 </hibernate-configuration>
