@@ -18,13 +18,14 @@ public class User {
 	private String userPhone;
 	private String userPic;
 	private String userAddress;
+	private String userType;
 	
 	public User() {
 		
 	}
 
 	public User(String userName, String userEmail, String userPassword, String userPhone, String userPic,
-			String userAddress) {
+			String userAddress,String userType) {
 		super();
 		this.userName = userName;
 		this.userEmail = userEmail;
@@ -32,10 +33,11 @@ public class User {
 		this.userPhone = userPhone;
 		this.userPic = userPic;
 		this.userAddress = userAddress;
+		this.userType = userType;
 	}
 
 	public User(int userId, String userName, String userEmail, String userPassword, String userPhone, String userPic,
-			String userAddress) {
+			String userAddress,String userType) {
 		super();
 		this.userId = userId;
 		this.userName = userName;
@@ -44,6 +46,7 @@ public class User {
 		this.userPhone = userPhone;
 		this.userPic = userPic;
 		this.userAddress = userAddress;
+		this.userType = userType;
 	}
 
 	public int getUserId() {
@@ -102,12 +105,22 @@ public class User {
 		this.userAddress = userAddress;
 	}
 
+	public String getUserType() {
+		return userType;
+	}
+
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
+
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + ", userPassword="
 				+ userPassword + ", userPhone=" + userPhone + ", userPic=" + userPic + ", userAddress=" + userAddress
-				+ "]";
+				+ ", userType=" + userType + "]";
 	}
+
+	
 	
 
 }
