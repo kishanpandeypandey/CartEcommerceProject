@@ -33,6 +33,8 @@
     <label for="name">Address</label>
 <textarea style ="height:120px;"name ="useraddress" class ="form-control" placeholder="enter your address"></textarea>
   </div>
+  <a href ="login.jsp" class=" d-block mb-2">Login click here</a>
+  
   <div class ="container text-center">
   <button type="submit" class="btn btn-primary">Register</button>
     <button class="btn btn-outline-warning">Reset</button>
