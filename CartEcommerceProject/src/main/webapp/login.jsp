@@ -15,7 +15,7 @@
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 				<div class="card mt-3">
-					<div class="card-header custom-bg text-white">
+					<div class="card-header custom-bg ">
 						<h3>Login here</h3>
 					</div>
 					<div class="card-body">

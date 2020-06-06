@@ -16,9 +16,9 @@ public class Product {
 	@Column(length=3000)
 	private String pDesc;
 	private String pPhoto;
-	private String pPrice;
-	private String pDiscount;
-	private String pQuantity;
+	private int pPrice;
+	private int pDiscount;
+	private int pQuantity;
 	@ManyToOne
 	private Category category;
 	
@@ -26,8 +26,8 @@ public class Product {
 		
 	}
 
-	public Product(int pId, String pName, String pDesc, String pPhoto, String pPrice, String pDiscount,
-			String pQuantity, Category category) {
+	public Product(int pId, String pName, String pDesc, String pPhoto, int pPrice, int pDiscount, int pQuantity,
+			Category category) {
 		super();
 		this.pId = pId;
 		this.pName = pName;
@@ -38,6 +38,8 @@ public class Product {
 		this.pQuantity = pQuantity;
 		this.category = category;
 	}
+
+
 
 	public int getpId() {
 		return pId;
@@ -71,27 +73,27 @@ public class Product {
 		this.pPhoto = pPhoto;
 	}
 
-	public String getpPrice() {
+	public int getpPrice() {
 		return pPrice;
 	}
 
-	public void setpPrice(String pPrice) {
+	public void setpPrice(int pPrice) {
 		this.pPrice = pPrice;
 	}
 
-	public String getpDiscount() {
+	public int getpDiscount() {
 		return pDiscount;
 	}
 
-	public void setpDiscount(String pDiscount) {
+	public void setpDiscount(int pDiscount) {
 		this.pDiscount = pDiscount;
 	}
 
-	public String getpQuantity() {
+	public int getpQuantity() {
 		return pQuantity;
 	}
 
-	public void setpQuantity(String pQuantity) {
+	public void setpQuantity(int pQuantity) {
 		this.pQuantity = pQuantity;
 	}
 
@@ -108,6 +110,7 @@ public class Product {
 		return "Product [pId=" + pId + ", pName=" + pName + ", pDesc=" + pDesc + ", pPhoto=" + pPhoto + ", pPrice="
 				+ pPrice + ", pDiscount=" + pDiscount + ", pQuantity=" + pQuantity + ", category=" + category + "]";
 	}
+
 	
 
 }

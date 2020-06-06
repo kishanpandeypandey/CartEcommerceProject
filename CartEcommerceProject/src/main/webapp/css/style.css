@@ -1,8 +1,17 @@
 
 body{
-	background:#e0f2f1;
+	background:white;
 }
 .custom-bg{
-	background:#009688!important;
+	background:white;
+	
+}
+.admin .card{
+	
+	border:1px solid #673a67;
+}
+.admin .card:hover{
+	background:#e2e2e2;
+	cursor: pointer;
 	
 }

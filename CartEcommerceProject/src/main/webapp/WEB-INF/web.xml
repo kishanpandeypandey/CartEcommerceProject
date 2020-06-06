@@ -16,6 +16,24 @@
   	<description></description>
   	<servlet-class>com.java.ecommerce.servlet.loginServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>logoutservlet</servlet-name>
+  	<display-name>logoutservlet</display-name>
+  	<description></description>
+  	<servlet-class>com.java.ecommerce.servlet.logoutservlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CategoryOpreationServlet</servlet-name>
+  	<display-name>CategoryOpreationServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.java.ecommerce.servlet.CategoryOpreationServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProductOpreationServlet</servlet-name>
+  	<display-name>ProductOpreationServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.java.ecommerce.servlet.ProductOpreationServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>RegisterServlet</servlet-name>
   	<url-pattern>/RegisterServlet</url-pattern>
@@ -23,5 +41,17 @@
   <servlet-mapping>
   	<servlet-name>loginServlet</servlet-name>
   	<url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>logoutservlet</servlet-name>
+  	<url-pattern>/logoutservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CategoryOpreationServlet</servlet-name>
+  	<url-pattern>/CategoryOpreationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProductOpreationServlet</servlet-name>
+  	<url-pattern>/ProductOpreationServlet</url-pattern>
   </servlet-mapping>
 </web-app>
